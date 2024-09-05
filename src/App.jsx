@@ -39,11 +39,17 @@ function App() {
   function handleSelectPlace(id) {
     setPickedPlaces((prevPickedPlaces) => {
       if (prevPickedPlaces.some((place) => place.id === id)) {
+        console.log('You have already choosen this place...');
         return prevPickedPlaces;
       }
       const place = AVAILABLE_PLACES.find((place) => place.id === id);
       return [place, ...prevPickedPlaces];
     });
+
+    const storedIds = JSON.parse(localStorage.getItem('selectedPlaces')) || [];
+    if (storedIds.indexOf(id) === -1) {
+      localStorage.setItem('selectedPlaces', JSON.stringify([id, ...storedIds]));
+    }
   }
 
   function handleRemovePlace() {
