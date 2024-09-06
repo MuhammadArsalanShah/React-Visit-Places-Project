@@ -156,8 +156,7 @@ header p {
 #confirmation-actions {
   margin-top: 1rem;
   display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 .button {
@@ -184,6 +183,32 @@ header p {
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   color: #5d0909;
+}
+#progress-container {
+  display: flex;
+  flex-direction: column;
+}
+#progress-container label {
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: #5d0909;
+}
+
+#progress-container progress {
+  border-radius: 7px; 
+  width: 100%;
+  height: 8px;
+  /* margin-left: -11.5%; */
+  /* box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 ); */
+}
+#progress-container progress::-webkit-progress-bar {
+  background-color: rgb(233, 233, 233);
+  border-radius: 7px;
+}
+#progress-container progress::-webkit-progress-value {
+  background-color: #5d0909;
+  border-radius: 7px;
+  /* box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 ); */
 }
 
 .modal::backdrop {
