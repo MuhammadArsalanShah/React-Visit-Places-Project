@@ -23,7 +23,7 @@ export default function DeleteConfirmation({ onConfirm, onCancel }) {
       <p>Do you really want to remove this place?</p>
       <div id="confirmation-actions">
         <div id="progress-container">
-          <label htmlFor="progress-bar">Self Deletion Remaining Time:</label>
+          <label htmlFor="progress-bar">Auto Delete Time Left</label>
           <ProgressBar timer={TIMER}/>
         </div>
         <div>
