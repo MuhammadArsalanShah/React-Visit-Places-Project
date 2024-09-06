@@ -202,7 +202,7 @@ header p {
   /* box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 ); */
 }
 #progress-container progress::-webkit-progress-bar {
-  background-color: rgb(233, 233, 233);
+  background-color: #b8aa9f;
   border-radius: 7px;
 }
 #progress-container progress::-webkit-progress-value {
